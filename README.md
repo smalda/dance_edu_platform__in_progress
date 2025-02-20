@@ -99,7 +99,7 @@ pytest tests/test_bot  # Bot tests
 
 ## Monitoring 📊
 
-- Prometheus metrics available at `/metrics`
+- Prometheus metrics available at `/metrics` in FastAPI or via Prometheus UI at http://localhost:9090
 - Track:
   - Request counts and latency
   - Queue message statistics
