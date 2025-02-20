@@ -1,8 +1,32 @@
+# Virtual environment
 venv/
+
+# Python
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+*.egg
+
+# Environment variables
 .env
-.pytest_cache/
+
+# Database
+*.db
+test.db
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Test coverage
 .coverage
-coverage.xml
 htmlcov/
+coverage.xml
+.pytest_cache/
+
+# Logs
+*.log
