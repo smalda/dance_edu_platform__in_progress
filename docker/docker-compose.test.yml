@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  test:
+    build:
+      context: ..
+      dockerfile: docker/api/Dockerfile
+    command: pytest
+    environment:
+      - DATABASE_URL=postgresql://smalda:1234@db:5432/dance_edu_test
+      - RABBITMQ_HOST=rabbitmq
+      - RABBITMQ_PORT=5672
+    depends_on:
+      db:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
